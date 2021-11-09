@@ -49,5 +49,5 @@ vdf['tqc'].unit        = 'kg m-2'
 vdf['tqc'].short_name  = 'LWP'
 vdf['tqc'].min_value   = 0
 vdf['tqc'].max_value   = 0.05
-vdf['tqc'].color       = 'blue'
+vdf['tqc'].color       = 'darkblue'
 vdf['tqc'].marker      = 'o'
