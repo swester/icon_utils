@@ -39,7 +39,7 @@ vdf['sw_net'].unit        = 'W m-2'
 vdf['sw_net'].short_name  = 'SW_net'
 vdf['sw_net'].min_value   = -10
 vdf['sw_net'].max_value   = 270
-vdf['sw_net'].color       = 'blueviolet'
+vdf['sw_net'].color       = 'blue'
 vdf['sw_net'].marker      = 'o'
 
 
