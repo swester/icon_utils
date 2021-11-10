@@ -37,7 +37,9 @@ def deaverage(arr):
     output:
     avg     1d array (1 element shorter than arr)
     '''
+    x_ = np.zeros(len(arr))
+    for i in range(0, len(arr)):   
+        x_[i] = (arr[i]*(i+1) - arr[i-1]*i)
+    return x_[1:]
 
-    print('todo for thomas ;-)')
 
-    return
