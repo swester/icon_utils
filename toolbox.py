@@ -40,6 +40,6 @@ def deaverage(arr):
     x_ = np.zeros(len(arr) - 1)
     for i in range(1, len(arr)):   
         x_[i-1] = (arr[i]*(i) - arr[i-1]*(i-1))
-    return x
+    return x_
 
 
