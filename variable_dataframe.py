@@ -2,7 +2,7 @@ import pandas as pd
 
 vdf = pd.DataFrame(
         # variables
-        columns = ['lw_net', 'lw_down', 'lw_up', 'tqc', 'sw_net',
+        columns = ['lw_net', 'lw_down', 'lw_up', 'tqc', 'sw_net', 'latent_heat',
                    'temp', 'qc', 'qv', ],
         # attributes
         index = ['var_name', 'long_name', 'short_name',
@@ -41,6 +41,17 @@ vdf['sw_net'].min_value   = -10
 vdf['sw_net'].max_value   = 270
 vdf['sw_net'].color       = 'blue'
 vdf['sw_net'].marker      = 'o'
+
+vdf['latent_heat'].var_name    = 'ALHFL_S'
+vdf['latent_heat'].long_name   = 'Net latent heat'
+vdf['latent_heat'].unit        = 'W m-2'
+vdf['latent_heat'].short_name  = 'LH'
+vdf['latent_heat'].min_value   = -200
+vdf['latent_heat'].max_value   = 50
+vdf['lw_net'].color            = 'goldenrod'
+vdf['lw_net'].marker           = 'o'
+vdf['latent_heat'].mult        = 1
+vdf['latent_heat'].avg         = True 
 
 
 vdf['tqc'].var_name    = 'TQC'
