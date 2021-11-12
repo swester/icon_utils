@@ -2,7 +2,7 @@ import pandas as pd
 
 vdf = pd.DataFrame(
         # variables
-        columns = ['lw_net', 'lw_down', 'lw_up', 'tqc', 'sw_net', 'latent_heat',
+        columns = ['lw_net', 'lw_down', 'lw_up', 'tqc', 'sw_net', 'latent_heat', 'sensible_heat',
                    'temp', 'qc', 'qv', ],
         # attributes
         index = ['var_name', 'long_name', 'short_name',
@@ -48,10 +48,21 @@ vdf['latent_heat'].unit        = 'W m-2'
 vdf['latent_heat'].short_name  = 'LH'
 vdf['latent_heat'].min_value   = -200
 vdf['latent_heat'].max_value   = 50
-vdf['lw_net'].color            = 'goldenrod'
-vdf['lw_net'].marker           = 'o'
+vdf['latent_heat'].color       = 'pink'
+vdf['latent_heat'].marker      = 'o'
 vdf['latent_heat'].mult        = 1
 vdf['latent_heat'].avg         = True 
+
+vdf['sensible_heat'].var_name    = 'ASHFL_S'
+vdf['sensible_heat'].long_name   = 'Net sensible heat'
+vdf['sensible_heat'].unit        = 'W m-2'
+vdf['sensible_heat'].short_name  = 'SH'
+vdf['sensible_heat'].min_value   = -200
+vdf['sensible_heat'].max_value   = 50
+vdf['sensible_heat'].color       = 'yellow'
+vdf['sensible_heat'].marker      = 'o'
+vdf['sensible_heat'].mult        = 1
+vdf['sensible_heat'].avg         = True 
 
 
 vdf['tqc'].var_name    = 'TQC'
