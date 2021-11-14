@@ -31,7 +31,27 @@ vdf['lw_net'].min_value   = -100
 vdf['lw_net'].max_value   = 10
 vdf['lw_net'].color       = 'goldenrod'
 vdf['lw_net'].marker      = 'o'
+vdf['lw_net'].avg         = True 
 
+vdf['lw_down'].var_name    = 'ATHD_S'
+vdf['lw_down'].long_name   = 'Downward longwave radiation'
+vdf['lw_down'].unit        = 'W m-2'
+vdf['lw_down'].short_name  = 'lw_down'
+vdf['lw_down'].min_value   = -100
+vdf['lw_down'].max_value   = 10
+vdf['lw_down'].color       = 'red'
+vdf['lw_down'].marker      = 'o'
+vdf['lw_down'].avg         = True
+
+vdf['lw_up'].var_name    = 'ATHU_S'
+vdf['lw_up'].long_name   = 'Upward longwave radiation'
+vdf['lw_up'].unit        = 'W m-2'
+vdf['lw_up'].short_name  = 'lw_up'
+vdf['lw_up'].min_value   = -100
+vdf['lw_up'].max_value   = 10
+vdf['lw_up'].color       = 'orange'
+vdf['lw_up'].marker      = 'o'
+vdf['lw_up'].avg         = True
 
 vdf['sw_net'].var_name    = 'ASOB_S'
 vdf['sw_net'].long_name   = 'Net shortwave radiation'
@@ -41,6 +61,7 @@ vdf['sw_net'].min_value   = -10
 vdf['sw_net'].max_value   = 270
 vdf['sw_net'].color       = 'blue'
 vdf['sw_net'].marker      = 'o'
+vdf['sw_net'].avg         = True
 
 vdf['latent_heat'].var_name    = 'ALHFL_S'
 vdf['latent_heat'].long_name   = 'Net latent heat'
