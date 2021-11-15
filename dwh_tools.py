@@ -2,12 +2,19 @@
 # A) surface stations
 # B) vertical profiles
 
+import ipdb #debugger command
+import numpy as np
+import pandas as pd
+import subprocess  # use: run command line commands from python
+from io import StringIO
+import matplotlib.pyplot as plt
 
-def dwh_surface(station_id, date_start, date_end, print_steps):
+def dwh_surface(variable_id, station_id, date_start, date_end, print_steps):
     '''
     retrieve observations from surface station
 
     input:
+    variable_id     string      '745'
     station_id      string      'PAY'
     date_start      string      '20210912000000'
     date_end        string      '20210913000000'
@@ -23,7 +30,7 @@ def dwh_surface(station_id, date_start, date_end, print_steps):
         + " -i nat_abbr," # -i int_ind
         + station_id
         + " -p "
-        + "1547,1541"  # e.g 742,743,745,746,747,748 choose and extract all columns containing relevant paramenters (i.e. all except the pressure column.)
+        + variable_id  # e.g 742,743,745,746,747,748 choose and extract all columns containing relevant paramenters (i.e. all except the pressure column.)
         + " -t "
         + date_start
         + "-"
