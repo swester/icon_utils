@@ -26,16 +26,15 @@ def ind_from_latlon(lats,lons,lat,lon,verbose=False):
     return ind
 
 def deaverage(arr):
-    '''
-    de-average variables which contain the values which have been
-    averaged since the beginning of the model simulation
+    """De-average variables which have been averaged since beginning
+    of the model simulation
 
-    input:
-    arr     1d array
+    Args:
+        arr (1d array): ICON output
 
-    output:
-    avg     1d array (1 element shorter than arr)
-    '''
+    Returns:
+        1d array: de-averaged output
+    """    
     x_ = np.zeros(len(arr) - 1)
     for i in range(1, len(arr)):   
         x_[i-1] = (arr[i]*(i) - arr[i-1]*(i-1))
