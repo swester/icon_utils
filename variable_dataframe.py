@@ -10,7 +10,7 @@ vdf = pd.DataFrame(
                  # line appearance
                  'marker', 'linestyle', 'color',
                  # value transformations
-                 'average', 'mult', 'add']
+                 'avg', 'mult', 'add']
 )
 
 # set default values for certain attributes
@@ -19,7 +19,7 @@ vdf.loc['linestyle'] = 'solid'
 vdf.loc['color'] = 'black'
 vdf.loc['mult'][:] = 1
 vdf.loc['add'][:] = 0
-vdf.loc['average'][:] = False
+vdf.loc['avg'][:] = False
 
 # fill variable dataframe with specific values
 
