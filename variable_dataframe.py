@@ -6,7 +6,7 @@ vdf = pd.DataFrame(
                    'temp', 'qc', 'qv','Ts', 'Ws'],
         # attributes
         index = ['var_name', 'long_name', 'short_name',
-                 'unit', 'min_value', 'max_value', 'var_id'
+                 'unit', 'min_value', 'max_value', 'var_id',
                  # line appearance
                  'marker', 'linestyle', 'color',
                  # value transformations
