@@ -45,7 +45,7 @@ vdf['lw_down'].avg         = True
 
 vdf['lw_up'].var_name    = 'ATHU_S'
 vdf['lw_up'].long_name   = 'Upward longwave radiation'
-vdf['lw_up'].unit        = 'W $m^-2$'
+vdf['lw_up'].unit        = 'W $m^(-2)$'
 vdf['lw_up'].short_name  = 'lw_up'
 vdf['lw_up'].min_value   = -100
 vdf['lw_up'].max_value   = 10
