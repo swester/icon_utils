@@ -107,7 +107,7 @@ vdf['Ts'].color       = 'gray'
 vdf['Ts'].marker      = 'o'
 vdf['Ts'].var_id      = '201'
 
-vdf['Ws'].var_name    = 'W_i'
+vdf['Ws'].var_name    = 'W_I'
 vdf['Ws'].long_name   = 'Interception storage water'
 vdf['Ws'].unit        = 'g Kg-1'
 vdf['Ws'].short_name  = 'Ws'
