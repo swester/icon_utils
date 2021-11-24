@@ -109,11 +109,11 @@ vdf['Ts'].var_id      = '201'
 
 vdf['Ws'].var_name    = 'W_I'
 vdf['Ws'].long_name   = 'Interception storage water'
-vdf['Ws'].unit        = 'g Kg-1'
+vdf['Ws'].unit        = 'Kg m-2'
 vdf['Ws'].short_name  = 'Ws'
 vdf['Ws'].min_value   = 0
 vdf['Ws'].max_value   = 0.25
 vdf['Ws'].color       = 'black'
 vdf['Ws'].marker      = 'o'
-vdf['Ws'].mult        = 1000
+vdf['Ws'].mult        = 1
 vdf['Ws'].avg         = False
