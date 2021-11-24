@@ -116,3 +116,4 @@ vdf['Ws'].max_value   = 0.25
 vdf['Ws'].color       = 'black'
 vdf['Ws'].marker      = 'o'
 vdf['Ws'].mult        = 1000
+vdf['Ws'].avg         = False
