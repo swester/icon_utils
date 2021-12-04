@@ -3,7 +3,7 @@ import pandas as pd
 vdf = pd.DataFrame(
         # variables
         columns = ['lw_net', 'lw_down', 'lw_up', 'tqc', 'sw_net', 'latent_heat', 'sensible_heat',
-                   'temp', 'qc', 'qv','Ts', 'Ws'],
+                   'temp', 'qc', 'qv','Ts', 'Ws', 'bs_latent_heat', 'pl_latent_heat'],
         # attributes
         index = ['var_name', 'long_name', 'short_name',
                  'unit', 'min_value', 'max_value', 'var_id',
@@ -75,6 +75,26 @@ vdf['latent_heat'].max_value   = 50
 vdf['latent_heat'].color       = 'pink'
 vdf['latent_heat'].marker      = 'o'
 vdf['latent_heat'].avg         = True 
+
+vdf['bs_latent_heat'].var_name    = 'ALHFL_BS'
+vdf['bs_latent_heat'].long_name   = 'bare soil latent heat'
+vdf['bs_latent_heat'].unit        = 'W m-2'
+vdf['bs_latent_heat'].short_name  = 'BS_LH'
+vdf['bs_latent_heat'].min_value   = -200
+vdf['bs_latent_heat'].max_value   = 50
+vdf['bs_latent_heat'].color       = 'red'
+vdf['bs_latent_heat'].marker      = 'o'
+vdf['bs_latent_heat'].avg         = True 
+
+vdf['pl_latent_heat'].var_name    = 'ALHFL_PL'
+vdf['pl_latent_heat'].long_name   = 'plant latent heat'
+vdf['pl_latent_heat'].unit        = 'W m-2'
+vdf['pl_latent_heat'].short_name  = 'PL_LH'
+vdf['pl_latent_heat'].min_value   = -200
+vdf['pl_latent_heat'].max_value   = 50
+vdf['pl_latent_heat'].color       = 'blue'
+vdf['pl_latent_heat'].marker      = 'o'
+vdf['pl_latent_heat'].avg         = True 
 
 vdf['sensible_heat'].var_name    = 'ASHFL_S'
 vdf['sensible_heat'].long_name   = 'Net sensible heat'
