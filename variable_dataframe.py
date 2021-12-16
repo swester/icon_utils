@@ -3,7 +3,7 @@ import pandas as pd
 vdf = pd.DataFrame(
         # variables
         columns = ['lw_net', 'lw_down', 'lw_up', 'tqc', 'sw_net', 'latent_heat', 'sensible_heat',
-                   'temp', 'qc', 'qv','Ts', 'Ws', 'bs_latent_heat', 'pl_latent_heat'],
+                   'temp', 'qc', 'qv','Ts', 'Ws', 'bs_latent_heat', 'pl_latent_heat', 'turb_coeff'],
         # attributes
         index = ['var_name', 'long_name', 'short_name',
                  'unit', 'min_value', 'max_value', 'var_id',
@@ -159,3 +159,14 @@ vdf['temp'].color       = 'black'
 vdf['temp'].marker      = 'o'
 vdf['temp'].mult        = 1
 vdf['temp'].avg         = False
+
+vdf['turb_coeff'].var_name    = 'TCH'
+vdf['turb_coeff'].long_name   = 'Turbulent transfer coefficient for heat and moisture'
+vdf['turb_coeff'].unit        = ''
+vdf['turb_coeff'].short_name  = 'turb_coeff'
+vdf['turb_coeff'].min_value   = 3.1*10**-5
+vdf['turb_coeff'].max_value   = 0.09
+vdf['turb_coeff'].color       = 'black'
+vdf['turb_coeff'].marker      = 'o'
+vdf['turb_coeff'].mult        = 1
+vdf['turb_coeff'].avg         = False
