@@ -77,7 +77,7 @@ vdf['latent_heat'].marker      = 'o'
 vdf['latent_heat'].avg         = True 
 
 vdf['bs_latent_heat'].var_name    = 'ALHFL_BS'
-vdf['bs_latent_heat'].long_name   = 'bare soil latent heat'
+vdf['bs_latent_heat'].long_name   = 'Bare soil latent heat'
 vdf['bs_latent_heat'].unit        = 'W m-2'
 vdf['bs_latent_heat'].short_name  = 'BS_LH'
 vdf['bs_latent_heat'].min_value   = -200
@@ -87,7 +87,7 @@ vdf['bs_latent_heat'].marker      = 'o'
 vdf['bs_latent_heat'].avg         = True 
 
 vdf['pl_latent_heat'].var_name    = 'ALHFL_PL'
-vdf['pl_latent_heat'].long_name   = 'plant latent heat'
+vdf['pl_latent_heat'].long_name   = 'Plant latent heat'
 vdf['pl_latent_heat'].unit        = 'W m-2'
 vdf['pl_latent_heat'].short_name  = 'PL_LH'
 vdf['pl_latent_heat'].min_value   = -200
@@ -139,7 +139,7 @@ vdf['Ws'].mult        = 1
 vdf['Ws'].avg         = False
 
 vdf['qv'].var_name    = 'QV'
-vdf['qv'].long_name   = 'specific humidity'
+vdf['qv'].long_name   = 'Specific humidity'
 vdf['qv'].unit        = 'g/Kg'
 vdf['qv'].short_name  = 'qv'
 vdf['qv'].min_value   = 3.5
@@ -148,3 +148,14 @@ vdf['qv'].color       = 'black'
 vdf['qv'].marker      = 'o'
 vdf['qv'].mult        = 1000
 vdf['qv'].avg         = False
+
+vdf['temp'].var_name    = 'T'
+vdf['temp'].long_name   = 'Temperature'
+vdf['temp'].unit        = 'K'
+vdf['temp'].short_name  = 'temp'
+vdf['temp'].min_value   = 272
+vdf['temp'].max_value   = 282
+vdf['temp'].color       = 'black'
+vdf['temp'].marker      = 'o'
+vdf['temp'].mult        = 1
+vdf['temp'].avg         = False
