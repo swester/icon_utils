@@ -137,3 +137,14 @@ vdf['Ws'].color       = 'black'
 vdf['Ws'].marker      = 'o'
 vdf['Ws'].mult        = 1
 vdf['Ws'].avg         = False
+
+vdf['qv'].var_name    = 'QV'
+vdf['qv'].long_name   = 'specific humidity'
+vdf['qv'].unit        = 'g/Kg'
+vdf['qv'].short_name  = 'qv'
+vdf['qv'].min_value   = 3.5
+vdf['qv'].max_value   = 5
+vdf['qv'].color       = 'black'
+vdf['qv'].marker      = 'o'
+vdf['qv'].mult        = 1000
+vdf['qv'].avg         = False
