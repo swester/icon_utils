@@ -3,7 +3,7 @@ import pandas as pd
 vdf = pd.DataFrame(
         # variables
         columns = ['lw_net', 'lw_down', 'lw_up', 'tqc', 'sw_net', 'latent_heat', 'sensible_heat',
-                   'temp', 'qc', 'qv','Ts', 'Ws', 'bs_latent_heat', 'pl_latent_heat', 'turb_coeff'],
+                   'temp', 'qc', 'qv', 'qv_s', 'Ts', 'Ws', 'bs_latent_heat', 'pl_latent_heat', 'turb_coeff'],
         # attributes
         index = ['var_name', 'long_name', 'short_name',
                  'unit', 'min_value', 'max_value', 'var_id',
@@ -148,6 +148,17 @@ vdf['qv'].color       = 'black'
 vdf['qv'].marker      = 'o'
 vdf['qv'].mult        = 1000
 vdf['qv'].avg         = False
+
+vdf['qv_s'].var_name    = 'QV_S'
+vdf['qv_s'].long_name   = 'Ground specific humidity'
+vdf['qv_s'].unit        = 'g/Kg'
+vdf['qv_s'].short_name  = 'qv_s'
+vdf['qv_s'].min_value   = 3.5
+vdf['qv_s'].max_value   = 5
+vdf['qv_s'].color       = 'black'
+vdf['qv_s'].marker      = 'o'
+vdf['qv_s'].mult        = 1000
+vdf['qv_s'].avg         = False
 
 vdf['temp'].var_name    = 'T'
 vdf['temp'].long_name   = 'Temperature'
