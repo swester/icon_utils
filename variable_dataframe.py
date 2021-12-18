@@ -3,7 +3,7 @@ import pandas as pd
 vdf = pd.DataFrame(
         # variables
         columns = ['lw_net', 'lw_down', 'lw_up', 'tqc', 'sw_net', 'latent_heat', 'sensible_heat',
-                   'temp', 'qc', 'qv', 'qv_s', 'Ts', 'Ws', 'bs_latent_heat', 'pl_latent_heat', 'turb_coeff'],
+                   'temp', 'qc', 'qv', 'qv_s', 'Ts', 'Ws', 'bs_latent_heat', 'pl_latent_heat', 'turb_coeff', 'v_10m', 'u_10m'],
         # attributes
         index = ['var_name', 'long_name', 'short_name',
                  'unit', 'min_value', 'max_value', 'var_id',
@@ -181,3 +181,25 @@ vdf['turb_coeff'].color       = 'black'
 vdf['turb_coeff'].marker      = 'o'
 vdf['turb_coeff'].mult        = 1
 vdf['turb_coeff'].avg         = False
+
+vdf['v_10m'].var_name    = 'V_10M'
+vdf['v_10m'].long_name   = 'Meridional wind at 10m above ground'
+vdf['v_10m'].unit        = 'm s-1'
+vdf['v_10m'].short_name  = 'v_10m'
+vdf['v_10m'].min_value   = 0
+vdf['v_10m'].max_value   = 1.25
+vdf['v_10m'].color       = 'black'
+vdf['v_10m'].marker      = 'o'
+vdf['v_10m'].mult        = 1
+vdf['v_10m'].avg         = False
+
+vdf['u_10m'].var_name    = 'U_10M'
+vdf['u_10m'].long_name   = 'Eastward wind at 10m above ground'
+vdf['u_10m'].unit        = 'm s-1'
+vdf['u_10m'].short_name  = 'u_10m'
+vdf['u_10m'].min_value   = 0
+vdf['u_10m'].max_value   = 0.25
+vdf['u_10m'].color       = 'black'
+vdf['u_10m'].marker      = 'o'
+vdf['u_10m'].mult        = 1
+vdf['u_10m'].avg         = False
